@@ -101,8 +101,6 @@ main{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
-
   margin-top: 20px;
 }
 
@@ -240,6 +238,8 @@ main{
   letter-spacing: 0.02em;
   text-align: left;
   padding: 10px;
+  color: rgba(92, 92, 92, 1);
+  ;
 }
 
 .resumo span a{
@@ -253,8 +253,167 @@ main{
   text-decoration: none;
 
 }
-.btn-show-more{
+
+.resumo p a {
+  color: rgba(237, 120, 57, 1);
+  text-decoration: none;
+  font-weight: 500;
+}
+#mais{
   display: none;
+}
+
+.discussoes{
+  margin-top: 30px;
+  margin-left: 250px;
+  border: 1px solid rgba(236, 236, 236, 1);
+  margin-right: 25px;
+}
+
+.discussoes h3{
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  text-align: left;
+  color: rgba(78, 78, 78, 1);
+  background: rgba(253, 241, 235, 1);
+  padding: 10px;
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
+
+.discussoes h4{
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21.09px;
+  text-align: center;
+  color: rgba(237, 120, 57, 1);
+  margin-top: 15px;
+}
+
+.discussoes button{
+  display: flex;
+  gap: 3px;
+  background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
+  color: #fff;
+  font-family: Quicksand;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 16px;
+  padding: 5px;
+  border: none;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.24);
+  border-radius: 3px;
+  position: absolute;
+  margin-top: 210px;
+}
+
+.discussoes button a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.discussoes p {
+  font-family: Quicksand;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.25px;
+  text-align: center;
+  color:  rgba(89, 89, 89, 1);
+  
+}
+
+
+.divCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.divCenter hr{
+  width: 1027px;
+  border: 1px solid rgba(231, 231, 231, 1)
+  
+}
+
+.divCenter p {
+  font-family: 'Quicksand';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.25px;
+  text-align: center;
+  max-width: 630px;
+}
+
+.discIcons{
+  display: flex;
+  gap: 50px;
+}
+
+.cardTopico{
+  margin: 30px 15px;
+  border: none;
+  padding: 30px;
+  border: 1px solid rgba(231, 231, 231, 1);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12);
+
+}
+
+.cardTopico h5{
+  font-family: Quicksand;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+  color:  rgba(237, 120, 57, 1);
+  ;
+}
+
+.cardTopico span{
+  font-family: Quicksand;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  text-align: left;
+  color:  rgba(92, 92, 92, 1);
+}
+
+.cardTopico p {
+  font-family: Quicksand;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.5px;
+  text-align: left;
+  margin-top: 10px;
+  max-width: 980px;
+}
+
+.icons{
+  display: flex;
+  margin-top: 10px;
+  gap: 15px;
+  align-items: center;
+}
+
+.icons img{
+  height: 18px;
+}
+
+.icons p {
+  font-family: Segoe UI;
+  font-size: 14px;
+  font-weight: 350;
+  line-height: 18.62px;
+  text-align: left;
+  color:  rgba(117, 117, 117, 1);
+
+  margin-top: 1px;
+}
+.textosIcons{
+  display: flex;
 }
 .content {
   display: flex;
@@ -265,8 +424,13 @@ main{
   align-items: center;
 }
 
+form{
+  display: none;
+}
+
 footer {
-  margin-top: 8px;
+  margin-left: 220px;
+  margin-top: 50px;
   display: flex;
   align-items: center;
   line-height: 20px;
@@ -277,8 +441,6 @@ footer a {
   align-items: center;
 }
 
-
-
 /* Responsive Styles */
 @media screen and (max-width: 1280px) {
  .videoContent{
@@ -288,7 +450,9 @@ footer a {
  .detalhes{
   max-height: 385px;
  }
-
+.discussoes hr{
+  max-width: 800px;
+}
  
 }
 
